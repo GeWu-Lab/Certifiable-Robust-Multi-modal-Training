@@ -18,10 +18,14 @@ Here is the official PyTorch implementation of *Certifiable Robust Multi-modal T
 We observe that when encountering attack on different modality, multi-modal model can be vulnerable to certain modality. The following figure presents the how different multi-modal model performs in each uni-modal attack. As shown in the following figure, attack on the audio modality (#a, dot dash line) lead to more performance discrepancy than visual modality (#v, full line). That indicates that the preferred modality, audio, is not always the robust one, and thus should be paid attention on in multi-modal learning. 
 
 <!-- **the potential of multimodal information is not fully exploited even when the multimodal model outperforms its uni-modal counterpart.** We conduct linear probing experiments to explore the quality of jointly trained encoders, and find them under-optimized (the yellow line) compared with the uni-modal model (the red line). We proposed the OGM-GE method to improve the optimization process adaptively and achieved consistent improvement (the blue line). We improve both the multimodal performance and uni-model representation as shown in the following figure. -->
-<div style="text-align: center;">    
-<img src="pics/rob.jpg" width = "50%" />
-<figcaption style="font-family: Arial, sans-serif; font-size: 14px; color: #333;"> Accuracy of different multi-modal robust training methods compared with Joint Training (JT) baseline under $\ell_2$-PGD attack with a range of radius for modality #v (vision) and #a (audio) respectively on Kinetics Sounds dataset. Results show that all these methods are more vulnerable to attacks on the specific modality #$a$. </figcaption>
-</div>
+<table align="center" width="100%"><tr><td align="center">
+<img src="pics/rob.jpg" width="50%" />
+<br>
+<figcaption style="font-family: Arial, sans-serif; font-size: 14px; color: #333;">
+Accuracy of different multi-modal robust training methods compared with Joint Training (JT) baseline under $\ell_2$-PGD attack with a range of radius for modality #v (vision) and #a (audio) respectively on Kinetics Sounds dataset. Results show that all these methods are more vulnerable to attacks on the specific modality #$a$.
+</figcaption>
+</td></tr></table>
+
 
 
 
