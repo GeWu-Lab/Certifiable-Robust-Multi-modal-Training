@@ -23,7 +23,7 @@ We observe that when encountering attack on different modality, multi-modal mode
 </div>
 
 <div align="center">
-    <span style="font-family: Arial, sans-serif; font-size: 14px;">Accuracy of different multi-modal robust training methods compared with Joint Training (JT) baseline under $\ell_2$-PGD attack with a range of radius for modality #v (vision) and #a (audio) respectively on Kinetics Sounds dataset. Results show that all these methods are more vulnerable to attacks on the specific modality #$a$.</span>
+    <span style="font-family: Arial, sans-serif; font-size: 14px;">Accuracy of different multi-modal robust training methods compared with Joint Training (JT) baseline under $\ell_2$-PGD attack with a range of radius for modality #v (vision) and #a (audio) respectively on Kinetics Sounds dataset. Results show that all these methods are more vulnerable to attacks on the specific modality #a.</span>
 </div>
 
 
