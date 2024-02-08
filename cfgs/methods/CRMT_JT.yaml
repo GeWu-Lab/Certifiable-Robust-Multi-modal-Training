@@ -1,0 +1,4 @@
+# @package methods
+method: CRMT_JT
+fusion_method: orth
+rho: 1.0

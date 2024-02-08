@@ -1,0 +1,4 @@
+# @package dataset
+_target_: datasets.KS_dataset.KS_dataset
+v_norm: True
+name: KS

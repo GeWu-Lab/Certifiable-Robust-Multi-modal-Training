@@ -1,0 +1,33 @@
+defaults: 
+  - encoder_v: resnet18_v
+  - encoder_a: resnet18_a
+  - dataset: KS
+  - optimizer: SGD
+  - scheduler: step_decay
+  - methods: baseline
+
+n_classes: 31
+batch_size: 64
+n_threads: 16
+optim_type: SGD
+tensorboard: True
+lr: 0.001
+n_epochs: 100
+train: True
+method: ${methods.method}
+result_path: ./exp_result/${dataset.name}/${method}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+fusion_method: ${methods.fusion_method}
+num_modal: 2
+val_freq: 1
+device: cuda
+gpu_device: [0,1,2,3]
+modality: None
+random_seed: 2024
+embed_dim: 512
+
+hydra:
+  run: 
+    dir: ${result_path}
+  sweep: 
+    dir: ${result_path}
+    subdir: ${hydra.job.num}

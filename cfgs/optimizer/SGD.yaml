@@ -1,0 +1,5 @@
+# @package optimizer
+_target_: torch.optim.SGD
+lr: ${lr}
+momentum: 0.9
+weight_decay: 1e-4
