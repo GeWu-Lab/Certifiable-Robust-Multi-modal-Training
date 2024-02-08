@@ -32,6 +32,7 @@ Here, we provide theoretical support to explain this phenomenon. First, we deriv
 ## Method Introduction
 
 Supported by these analysis before, we seek for stably enhancing the certified robustness. However, directly regulations of these two compoenets are intricately linked with the last linear classifier $W$ of the multi-modal model, potentially leading to conflicts in optimization objectives. Hence, we modify the last linear classifier, add orthogonality and additional weight on it. (See the following figure).
+
 <div  align="center">    
 <img src="pics/framework.jpg" width = "90%" />
 <figcaption style="font-family: Arial, sans-serif; font-size: 14px; color: #333;"> Comparison between original Joint Training framework and our proposed CRMT-JT framework. </figcaption>
