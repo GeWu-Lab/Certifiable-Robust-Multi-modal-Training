@@ -41,7 +41,7 @@ Supported by these analysis before, we seek for stably enhancing the certified r
 With this newly proposed framework, the pipeline of our certified robust multi-modal training algorithm consists of two sub-process:
 
 1. Optimize with cross-entropy loss and margin regularization with term $\rho$:  
-   $$\min_{{a}^{(m)}, \tilde{W}^{(m)}, \phi^{(m)}} \frac{1}{N} \sum_{i=1}^N \left(CE(h({x}_i), y_i) + \rho   \log \sum_{m=1}^2 \frac{\sum_{k \neq y} \exp( \tilde{W}^{(m)}_{k\cdot} \phi^{(m)} ({x}_i^{(m)}))}{ 1}\right), $$
+   $$\min_{{a}^{(m)}, \tilde{W}^{(m)}, \phi^{(m)}} \frac{1}{N} \sum_{i=1}^N \left(CE(h({x}_i), y_i) + \rho   \log \sum_{m=1}^2 \frac{\sum_{k \neq y} \exp( \tilde{W}^{(m)}_{k.} \phi^{(m)} ({x}_i^{(m)}))}{ \exp(\tilde{W}^{(m)}_{y.} \phi^{(m)} ({x}_i^{(m)}))}\right), $$
 
 3. Fix $\tilde{W}^{(m)}, \phi^{(m)}$, update ${a}^{(m)}$ to approach higher certified robustness: 
 $\min_{{a}^{(m)}}~~ L_2 = -\frac{1}{N} \sum_{i=1}^N r({x}_i),$ where $r({x})$ is the certified lower bound.
