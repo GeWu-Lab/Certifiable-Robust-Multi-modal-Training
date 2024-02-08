@@ -53,15 +53,16 @@ With this newly proposed framework, the pipeline of our certified robust multi-m
 2. Fix $\tilde{W}^{(m)}, \phi^{(m)}$, update ${a}^{(m)}$ to approach higher certified robustness: 
 $\min_{{a}^{(m)}}~~ L_2 = -\frac{1}{N} \sum_{i=1}^N r({x}_i),$ where $r({x})$ is the certified lower bound.
 
-
 ## Get Started
 ### Requirements 
+- Python 3.8
 <pre><code>
 pip install -r requirements.txt
 </code></pre>
 
 ### Run
 You can simply run the demo on MSRC-v1 dataset using:  
+
 <pre><code>
 python main.py --methods=CRMT-JT --methods.gamma=1.0
 </code></pre>
@@ -122,6 +123,7 @@ Moreover, the training step 2 is the same for all the three training strategies.
 ## Citation
 
 If you find this work useful, please consider citing it.
+
 <pre><code>
 @inproceedings{yang2024Quantifying,
   title={Quantifying and Enhancing Multi-modal Robustness with Modality Preference},
