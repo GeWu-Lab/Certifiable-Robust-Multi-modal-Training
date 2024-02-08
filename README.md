@@ -35,7 +35,8 @@ Supported by these analysis before, we seek for stably enhancing the certified r
 <div  align="center">    
 <img src="pics/framework.jpg" width = "90%" />
 <figcaption style="font-family: Arial, sans-serif; font-size: 14px; color: #333;"> Comparison between original Joint Training framework and our proposed CRMT-JT framework. </figcaption>
-</div>
+</div>  
+ 
 
 With this newly proposed framework, the pipeline of our certified robust multi-modal training algorithm consists of two sub-process:
 
