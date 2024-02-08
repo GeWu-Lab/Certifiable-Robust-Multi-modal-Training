@@ -39,10 +39,11 @@ Supported by these analysis before, we seek for stably enhancing the certified r
 
 With this newly proposed framework, the pipeline of our certified robust multi-modal training algorithm consists of two sub-process:
 
-1. Optimize with cross-entropy loss and margin regularization with term $\rho$: $$\min_{\bm{a}^{(m)}, \tilde{W}^{(m)}, \phi^{(m)}} \frac{1}{N} \sum_{i=1}^N \left(CE(h(\bm{x}_i), y_i) + \rho   \log \sum_{m=1}^2 \frac{\sum_{k \neq y} \exp( \tilde{W}^{(m)}_{k\cdot} \phi^{(m)} (\bm{x}_i^{(m)}))}{ \exp(\tilde{W}^{(m)}_{y\cdot} \phi^{(m)} (\bm{x}_i^{(m)}))}\right), $$
+1. Optimize with cross-entropy loss and margin regularization with term $\rho$:  
+   $$\min_{\mathbf{a}^{(m)}, \tilde{W}^{(m)}, \phi^{(m)}} \frac{1}{N} \sum_{i=1}^N \left(CE(h(\mathbf{x}_i), y_i) + \rho   \log \sum_{m=1}^2 \frac{\sum_{k \neq y} \exp( \tilde{W}^{(m)}_{k\cdot} \phi^{(m)} (\mathbf{x}_i^{(m)}))}{ \exp(\tilde{W}^{(m)}_{y\cdot} \phi^{(m)} (\mathbf{x}_i^{(m)}))}\right), $$
 
-2.  Fix $\tilde{W}^{(m)}, \phi^{(m)}$, update $\bm{a}^{(m)}$ to approach higher certified robustness: 
-$\min_{\bm{a}^{(m)}}~~ L_2 = -\frac{1}{N} \sum_{i=1}^N r(\bm{x}_i),$ where $r(\bm{x})$ is the certified lower bound.
+3. Fix $\tilde{W}^{(m)}, \phi^{(m)}$, update $\mathbf{a}^{(m)}$ to approach higher certified robustness: 
+$\min_{\mathbf{a}^{(m)}}~~ L_2 = -\frac{1}{N} \sum_{i=1}^N r(\mathbf{x}_i),$ where $r(\mathbf{x})$ is the certified lower bound.
 
 
 ## Get Started
@@ -113,7 +114,6 @@ Moreover, the training step 2 is the same for all the three training strategies.
 ## Citation
 
 If you find this work useful, please consider citing it.
-
 <pre><code>
 @inproceedings{yang2024Quantifying,
   title={Quantifying and Enhancing Multi-modal Robustness with Modality Preference},
