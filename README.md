@@ -19,7 +19,7 @@ We observe that when encountering attack on different modality, multi-modal mode
 
 <!-- **the potential of multimodal information is not fully exploited even when the multimodal model outperforms its uni-modal counterpart.** We conduct linear probing experiments to explore the quality of jointly trained encoders, and find them under-optimized (the yellow line) compared with the uni-modal model (the red line). We proposed the OGM-GE method to improve the optimization process adaptively and achieved consistent improvement (the blue line). We improve both the multimodal performance and uni-model representation as shown in the following figure. -->
 <div align="center">    
-<img src="pics/rob.jpg" width = "60%" />
+<img src="pics/rob.jpg" width = "50%" />
 </div>
 
 <div align="center">
@@ -48,7 +48,7 @@ With this newly proposed framework, the pipeline of our certified robust multi-m
 <img src="pics/step1.png" width = "80%" />
 </div>
 
-   $\min_{{a}^{(m)}, \tilde{W}^{(m)}, \phi^{(m)}} \frac{1}{N} \sum_{i=1}^N \left(CE(h({x}_i), y_i) + \rho \log \sum_{m=1}^2 \frac{\sum_{k \neq y} \exp( \tilde{W}^{(m)}_{k\cdot} \phi^{(m)} ({x}_i^{(m)}))}{ \exp(\tilde{W}^{(m)}_{y\cdot} \phi^{(m)} ({x}_i^{(m)}))}\right), $
+<!-- $\min_{{a}^{(m)}, \tilde{W}^{(m)}, \phi^{(m)}} \frac{1}{N} \sum_{i=1}^N \left(CE(h({x}_i), y_i) + \rho \log \sum_{m=1}^2 \frac{\sum_{k \neq y} \exp( \tilde{W}^{(m)}_{k\cdot} \phi^{(m)} ({x}_i^{(m)}))}{ \exp(\tilde{W}^{(m)}_{y\cdot} \phi^{(m)} ({x}_i^{(m)}))}\right), $ -->
 
 2. Fix $\tilde{W}^{(m)}, \phi^{(m)}$, update ${a}^{(m)}$ to approach higher certified robustness: 
 $\min_{{a}^{(m)}}~~ L_2 = -\frac{1}{N} \sum_{i=1}^N r({x}_i),$ where $r({x})$ is the certified lower bound.
@@ -61,12 +61,12 @@ pip install -r requirements.txt
 </code></pre>
 
 ### Run
-You can simply run the demo on MSRC-v1 dataset using:  
+You can simply run the demo of CRMT_JT using:  
 
 <pre><code>
-python main.py --methods=CRMT-JT --methods.gamma=1.0
+python main.py methods=CRMT_JT methods.gamma=1.0
 </code></pre>
-You can adjust the algorithm's detailed setting by modifying parameters such as $\rho$. Alternate datasets can also be utilized, provided they adhere to the following preparation protocol.
+You can adjust the algorithm's detailed setting by modifying parameters such as $\rho$. And alternate datasets can also be utilized.
 
 ### Data Preparation
 
