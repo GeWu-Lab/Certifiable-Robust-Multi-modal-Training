@@ -20,7 +20,10 @@ We observe that when encountering attack on different modality, multi-modal mode
 <!-- **the potential of multimodal information is not fully exploited even when the multimodal model outperforms its uni-modal counterpart.** We conduct linear probing experiments to explore the quality of jointly trained encoders, and find them under-optimized (the yellow line) compared with the uni-modal model (the red line). We proposed the OGM-GE method to improve the optimization process adaptively and achieved consistent improvement (the blue line). We improve both the multimodal performance and uni-model representation as shown in the following figure. -->
 <div align="center">    
 <img src="pics/rob.jpg" width = "60%" />
-<figcaption style="font-family: Arial, sans-serif; font-size: 14px; color: #333;"> Accuracy of different multi-modal robust training methods compared with Joint Training (JT) baseline under $\ell_2$-PGD attack with a range of radius for modality #v (vision) and #a (audio) respectively on Kinetics Sounds dataset. Results show that all these methods are more vulnerable to attacks on the specific modality #$a$. </figcaption>
+</div>
+
+<div align="center">
+    <span style="font-family: Arial, sans-serif; font-size: 14px;">Accuracy of different multi-modal robust training methods compared with Joint Training (JT) baseline under $\ell_2$-PGD attack with a range of radius for modality #v (vision) and #a (audio) respectively on Kinetics Sounds dataset. Results show that all these methods are more vulnerable to attacks on the specific modality #$a$.</span>
 </div>
 
 
