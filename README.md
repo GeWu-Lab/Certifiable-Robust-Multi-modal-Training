@@ -72,7 +72,7 @@ You can adjust the algorithm's detailed setting by modifying parameters such as 
 
 The original datasets we used can be found in：
 [Kinetics-Sounds](https://github.com/cvdfoundation/kinetics-dataset).
-[UCF-101](https://www.crcv.ucf.edu/data/UCF101.php),
+[UCF101](https://www.crcv.ucf.edu/data/UCF101.php),
 [VGGSound](https://www.robots.ox.ac.uk/~vgg/data/vggsound/),
 
 
@@ -127,7 +127,7 @@ If you find this work useful, please consider citing it.
 <pre><code>
 @inproceedings{yang2024Quantifying,
   title={Quantifying and Enhancing Multi-modal Robustness with Modality Preference},
-  author={Zequn Yang and Wei, Yake and Ce Liang and Hu, Di},
+  author={Yang, Zequn and Wei, Yake and Liang, Ce and Hu, Di},
   booktitle={The Twelfth International Conference on Learning Representations},
   year={2024}
 }
