@@ -1,4 +1,4 @@
 # @package methods
 method: CRMT_AT
 fusion_method: orth
-rho: 1.0
+rho: 2.0

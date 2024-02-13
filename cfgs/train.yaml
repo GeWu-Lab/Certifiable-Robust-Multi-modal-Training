@@ -12,7 +12,7 @@ n_threads: 16
 optim_type: SGD
 tensorboard: True
 lr: 0.001
-n_epochs: 100
+n_epochs: 140
 train: True
 method: ${methods.method}
 result_path: ./exp_result/${dataset.name}/${method}/${now:%Y-%m-%d}/${now:%H-%M-%S}
