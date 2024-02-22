@@ -1,7 +1,7 @@
 # Official Certifiable Robust Multi-modal Training in PyTorch
 
 
-Here is the official PyTorch implementation of *Certifiable Robust Multi-modal Training* (CRMT) proposed in ''*Quantifying and Enhancing Multi-modal Robustness with Modality Preference*'', which is a flexible training procedure to improve the robustness of multimodal learning. Please refer to our [ICLR 2024 paper]() for more details.
+Here is the official PyTorch implementation of *Certifiable Robust Multi-modal Training* (CRMT) proposed in ''*Quantifying and Enhancing Multi-modal Robustness with Modality Preference*'', which is a flexible training procedure to improve the robustness of multimodal learning. Please refer to our [ICLR 2024 paper](https://arxiv.org/abs/2402.06244) for more details.
 
 **Paper Title: "Quantifying and Enhancing Multi-modal Robustness with Modality Preference"**
 
@@ -9,7 +9,8 @@ Here is the official PyTorch implementation of *Certifiable Robust Multi-modal T
 
 **Accepted by: The Twelfth International Conference on Learning Representations (ICLR 2024)**
 
-<!-- **[[arXiv](https://arxiv.org/abs/)]** **[[Supplementary Material](https://github.com/GeWu-Lab/)]**  -->
+**[[arXiv](https://arxiv.org/abs/2402.06244)]** 
+<!-- **[[Supplementary Material](https://github.com/GeWu-Lab/)]**  -->
 
 
 
